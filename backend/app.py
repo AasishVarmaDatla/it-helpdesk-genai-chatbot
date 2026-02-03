@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from triage import classify_issue
 
 app = Flask(__name__)
 
@@ -7,12 +8,16 @@ def chat():
     data = request.get_json()
     user_message = data.get("message")
 
+    category, priority = classify_issue(user_message)
+
     response = {
-        "reply": "Backend server is working",
-        "user_input": user_message
+        "reply": "Issue received successfully",
+        "category": category,
+        "priority": priority
     }
 
     return jsonify(response)
 
 if __name__ == "__main__":
     app.run(debug=True)
+
