@@ -8,12 +8,13 @@ def chat():
     user_message = data.get("message")
 
     category, priority = classify_issue(user_message)
+    reply = generate_reply(category)
 
     response = {
-        "reply": "Issue received successfully",
-        "category": category,
-        "priority": priority
-    }
+    "category": category,
+    "priority": priority,
+    "reply": reply
+}
 
     return jsonify(response)
 
