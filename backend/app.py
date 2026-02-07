@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify
-from triage import classify_issue
-
+from triage import classify_issue, generate_reply
 app = Flask(__name__)
 
 @app.route("/chat", methods=["POST"])
