@@ -1,7 +1,7 @@
 def classify_issue(message):
     msg = message.lower()
 
-    if "wifi" in msg or "network" in msg or "vpn" or "internet" in msg:
+    if "wifi" in msg or "network" in msg or "internet" in msg or "vpn" in msg:
         return "Network", "High"
 
     elif "password" in msg or "login" in msg or "account" in msg:
@@ -15,13 +15,14 @@ def classify_issue(message):
 
     else:
         return "General", "Low"
-
 def generate_reply(category):
     replies = {
         "Network": "Try restarting router or checking cables.",
         "Account": "Reset password or verify credentials.",
-        "Software": "Reinstall or update the application.",
+        "Performance": "Close background apps and restart system.",
+        "Hardware": "Check device connection or contact support.",
         "General": "Support team will assist shortly."
     }
     return replies.get(category, "Issue noted.")
+
 
