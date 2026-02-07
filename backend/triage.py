@@ -15,3 +15,13 @@ def classify_issue(message):
 
     else:
         return "General", "Low"
+
+def generate_reply(category):
+    replies = {
+        "Network": "Try restarting router or checking cables.",
+        "Account": "Reset password or verify credentials.",
+        "Software": "Reinstall or update the application.",
+        "General": "Support team will assist shortly."
+    }
+    return replies.get(category, "Issue noted.")
+
