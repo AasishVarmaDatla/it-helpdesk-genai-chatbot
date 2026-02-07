@@ -1,7 +1,7 @@
 def classify_issue(message):
     msg = message.lower()
 
-    if "wifi" in msg or "network" in msg or "vpn" in msg:
+    if "wifi" in msg or "network" in msg or "internet" in msg or "vpn" in msg:
         return "Network", "High"
 
     elif "password" in msg or "login" in msg or "account" in msg:
