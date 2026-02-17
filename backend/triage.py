@@ -1,7 +1,7 @@
 def classify_issue(message):
     msg = message.lower()
 
-    if ("crash" in msg or "error" in msg or "failed" in msg or "down" in msg) and "urgent" in msg:
+    if "crash" in msg or "error" in msg or "failed" in msg or "down" in msg or "urgent" in msg:
         return "Performance", "High"
 
     elif "hi" in msg or "hello" in msg:
