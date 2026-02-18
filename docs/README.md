@@ -1,6 +1,6 @@
 # IT Helpdesk Chatbot-Pari
 
-This project is a GenAI-based IT Helpdesk Chatbot that helps users resolve common technical issues through natural language interaction.Pari can understand user problems, search a knowledge base, and provide troubleshooting suggestions similar to IT support systems.
+This project is an IT Helpdesk Chatbot designed to assist users with common technical issues through a conversational interface. Pari classifies user queries, provides troubleshooting suggestions, and simulates real-world IT support workflows. It includes backend API deployment, frontend web interface, and ticket escalation functionality.
 
 The goal of this project is to learn how AI-powered chat systems are used in enterprise IT environments.
 
@@ -18,7 +18,6 @@ The goal of this project is to learn how AI-powered chat systems are used in ent
 
 ## Features Implemented
 
-- Natural language query processing 
 - Issue category detection  
 - Knowledge base search  
 - Automated response generation  
@@ -45,11 +44,11 @@ The goal of this project is to learn how AI-powered chat systems are used in ent
 
 ## How The System Works
 
-1. User submits a query  
-2. The query is processed using NLP  
-3. Relevant solutions are retrieved from the knowledge base  
-4. Chatbot generates a response using the AI model 
-5. If the issue is unresolved, a support ticket is created  
+1.User submits a technical query through the chatbot interface.
+2.The query is analyzed using rule-based classification and keyword matching.
+3.Relevant troubleshooting suggestions are retrieved from predefined responses or stored data.
+4.The chatbot generates an appropriate reply based on the detected issue category.
+5.If the issue remains unresolved, a support ticket is created for escalation.
 
 ---
 
