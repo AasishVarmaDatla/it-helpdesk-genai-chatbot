@@ -1,6 +1,6 @@
-# IT Helpdesk Chatbot
+# IT Helpdesk Chatbot-Pari
 
-This project is a GenAI-based IT Helpdesk Chatbot that helps users resolve common technical issues through natural language interaction.It can understand user problems, search a knowledge base, and provide troubleshooting suggestions similar to IT support systems.
+This project is a GenAI-based IT Helpdesk Chatbot that helps users resolve common technical issues through natural language interaction.Pari can understand user problems, search a knowledge base, and provide troubleshooting suggestions similar to IT support systems.
 
 The goal of this project is to learn how AI-powered chat systems are used in enterprise IT environments.
 
@@ -33,17 +33,13 @@ The goal of this project is to learn how AI-powered chat systems are used in ent
 - Python  
 - - Flask / FastAPI 
 
-### AI and NLP
-- OpenAI API / LLM  
-- Sentence Transformers  
-- LangChain (for prompt handling)  
-
 ### Frontend
 - HTML, CSS, JavaScript  
 
 ### Storage
 - JSON / SQLite database  
-- Vector database (FAISS / ChromaDB)  
+- Vector database (FAISS / ChromaDB)
+- Sample SQLite DB included for demo purposes. 
 
 ---
 
@@ -67,7 +63,26 @@ The goal of this project is to learn how AI-powered chat systems are used in ent
 
 ---
 
+## Deployment
+
+Backend:
+- Hosted on Render
+- Gunicorn used for production
+- requirements.txt included
+
+Frontend:
+- Hosted on Netlify
+- Static HTML/CSS/JS
+- Connected to backend API
+
+
+## Live Demo
+Frontend: https://it-helpdesk-chatbot-pari.netlify.app  
+Backend API: https://it-helpdesk-genai-chatbot.onrender.com/chat
+
+
 ## Running The Project Locally
+
 
 ### Clone Repository
 
